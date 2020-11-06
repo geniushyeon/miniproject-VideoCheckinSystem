@@ -6,41 +6,22 @@ public class ClientRepository {
 
 	List<Client> clientList = new ArrayList<>();
 	List<VideoInformation> clientVideoList = new ArrayList<>();
-	
-	Client client = new Client();
+
+	//	Client client = new Client();
 	VideoRepository clientVideoRepo = new VideoRepository();
-	
+
 	public ClientRepository() {
 		setClientList();
-		
-	}
-	
-	public void setClientList() {
-		client.setClientName("이지현");
-		client.setClientCode(1);
-		client.setLateFee(0);
-		clientList.add(client);
 
-		client.setClientName("윤소인");
-		client.setClientCode(2);
-		client.setLateFee(1000);
-		clientList.add(client);	
-	
 	}
-	
-	public void setClientVideoList() {
-		
-		
+
+	public void setClientList() {
+		clientList.add(0, new Client("이지현", 1, 1000));
+		clientList.add(1, new Client("이수현", 2, 0));
+
 	}
-	
-	public void getClientList() {
-		for (int i=0; i<clientList.size(); i++) {
-			System.out.println(clientList.get(i));
-		}
-	}
-	
-	
-	
-	
-	
+
 }
+
+
+

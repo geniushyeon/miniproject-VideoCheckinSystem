@@ -9,9 +9,9 @@ public class VideoInformation {
 		
 	}
 	
-	public VideoInformation(String videoName, long videoCode) {
-		this.videoName = videoName;
+	public VideoInformation(long videoCode, String videoName) {
 		this.videoCode = videoCode;
+		this.videoName = videoName;
 	}
 	
 	public String getVideoName() {
@@ -29,7 +29,7 @@ public class VideoInformation {
 
 	@Override
 	public String toString() {
-		return "VideoInformation [videoName=" + videoName + ", videoCode=" + videoCode + "]";
+		return  videoCode + "\t" + videoName;
 	}
 	
 	

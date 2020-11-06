@@ -11,9 +11,17 @@ public class VideoRepository {
 	
 
 	public void setVideoList() {
-		videoInfo.setVideoCode(101);
-		videoInfo.setVideoName("캡틴마블");
-		videoList.add(videoInfo);
+		videoList.add(new VideoInformation(101, "캡틴마블"));
+		videoList.add(new VideoInformation(102, "다크페이트"));
+
+	}
+	
+	public void getVideoList() {
+		System.out.println("Code\tTitle");
+		System.out.println("---------------");
+		for (VideoInformation v : videoList) {
+			System.out.println(v.toString());
+		}
 	}
 	
 }

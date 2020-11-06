@@ -43,7 +43,7 @@ public class Client {
 
 	@Override
 	public String toString() {
-		return "Client [clientName=" + clientName + ", clientCode=" + clientCode + ", lateFee=" + lateFee + "]";
+		return  clientName + "\t" + clientCode + "\t" + lateFee + "원";
 	}
 	
 	
