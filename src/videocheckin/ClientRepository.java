@@ -7,7 +7,6 @@ public class ClientRepository {
 	List<Client> clientList = new ArrayList<>();
 	List<VideoInformation> clientVideoList = new ArrayList<>();
 
-	//	Client client = new Client();
 	VideoRepository clientVideoRepo = new VideoRepository();
 
 	public ClientRepository() {
