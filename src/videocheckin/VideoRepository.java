@@ -14,6 +14,7 @@ public class VideoRepository {
 		videoList.add(new VideoInformation(101, "캡틴마블"));
 		videoList.add(new VideoInformation(102, "다크페이트"));
 
+
 	}
 	
 	public void getVideoList() {

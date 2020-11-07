@@ -19,6 +19,14 @@ public class ClientRepository {
 		clientList.add(1, new Client("이수현", 2, 0));
 
 	}
+	
+	public void getClientList() {
+		System.out.println("\n이름\t고객코드\t연체료");
+		System.out.println("---------------------");
+		for(Client clientlist : clientList) {
+			System.out.println(clientlist);
+		}
+	}
 
 }
 

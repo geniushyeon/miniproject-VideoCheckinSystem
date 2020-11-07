@@ -11,14 +11,16 @@ public class VideoRepository {
 	
 
 	public void setVideoList() {
-		videoList.add(new VideoInformation(101, "캡틴마블"));
-		videoList.add(new VideoInformation(102, "다크페이트"));
+		videoList.add(new VideoInformation(101, "캡틴마블", "대여가능"));
+		videoList.add(new VideoInformation(102, "다크페이트", "대여가능"));
+		videoList.add(new VideoInformation(201, "벌새", "대여가능"));
+		videoList.add(new VideoInformation(202, "메기", "대여가능"));
 
 	}
 	
 	public void getVideoList() {
-		System.out.println("Code\tTitle");
-		System.out.println("---------------");
+		System.out.println("Code\tTitle\t대여여부");
+		System.out.println("-----------------------");
 		for (VideoInformation v : videoList) {
 			System.out.println(v.toString());
 		}
